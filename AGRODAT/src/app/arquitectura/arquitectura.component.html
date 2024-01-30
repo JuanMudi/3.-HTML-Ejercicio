@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Arquitectura General de AGRODAT</title>
+    <meta name="description" content="Descripción de la arquitectura general de la plataforma AGRODAT.">
+    <meta name="author" content="Juan Esteban Muñoz">
+</head>
+<body>
+    <h1>Arquitectura General de AGRODAT</h1>
+    <nav>
+        <ul>
+            <li><a href="#contenido">Ir al Contenido</a></li>
+        </ul>
+    </nav>
+    <section id="contenido">
+        <h2>Capas de la Arquitectura</h2>
+        
+        <h3>5.1 Capa 1: Datos</h3>
+        <p>Persistencia de datos y sincronización en MySQL 8.0.23 sin lógica de procedimientos almacenados.</p>
+        
+        <h3>5.2 Capa 2: Lógica de Negocio</h3>
+        <p>Procesamiento de información con POJOs y patrón VO/DAO para la comunicación con la base de datos.</p>
+        
+        <h3>5.3 Capa 3: Conectividad Cliente Final</h3>
+        <p>API utilizando Servlets y JSON en TOMCAT para la comunicación entre cliente y servidor.</p>
+        
+        <h3>5.4 Capa 4: Visualización</h3>
+        <p>Diferentes vistas para usuarios finales y administradores, desarrolladas en Apache Cordova y React.</p>
+
+        <!-- Más detalles pueden ser añadidos aquí si es necesario -->
+    </section>
+</body>
+</html>
